@@ -1,4 +1,12 @@
+const assign = require('object.assign')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
+
+// 默认配置
+const defaultOptions = {
+  files: ['src/**/*.vue', 'src/**/*.scss', 'scss/**/*.scss'],
+  syntax: 'scss'
+}
+
 /**
  *
  * vayne stylelint 插件
@@ -10,6 +18,9 @@ const StyleLintPlugin = require('stylelint-webpack-plugin')
 class VaynePluginStyleLint {
   constructor(config, log) {
     log.debug('开始解析 vayne stylelint 插件')
+
+    let opts = assign({}, defaultOptions, config.styleLint || {})
+
     this.name = 'VaynePluginStyleLint'
 
     return {

@@ -16,6 +16,17 @@ module.exports = {
 }
 ```
 
+## Config 
+> 在.vaynerc.js 
+```js
+module.exports = {
+  // 配置见  https://stylelint.io/user-guide/node-api/#syntax
+  styleLint: {
+
+  }
+}
+```
+
 ## include
 * __stylelint-webpack-plugin__ 
 * __stylelint__ 
