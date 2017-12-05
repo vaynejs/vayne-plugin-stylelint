@@ -29,6 +29,5 @@ module.exports = {
 
 ## include
 * __stylelint-webpack-plugin__ 
-* __stylelint__ 
-* __stylelint-config-standard__ 
-* __stylelint-processor-html__ 
+
+## [stylelint-config-vayne](https://github.com/vaynejs/stylelint-config-vayne)
