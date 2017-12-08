@@ -19,7 +19,7 @@ class VaynePluginStyleLint {
   constructor(config, log) {
     log.debug('开始解析 vayne stylelint 插件')
     let styleLint = config.styleLint || {}
-    let opts = _.defaults(defaultOptions, styleLint)
+    let opts = _.assign(defaultOptions, styleLint)
     if (styleLint.files) {
       opts.files = _.union(defaultOptions.files, styleLint.files)
     }
