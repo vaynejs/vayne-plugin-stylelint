@@ -19,7 +19,8 @@ class VaynePluginStyleLint {
   constructor(config, log) {
     log.debug('开始解析 vayne stylelint 插件')
     let styleLint = config.styleLint || {}
-    let opts = _.assign(defaultOptions, styleLint)
+    let opts = _.assign({}, defaultOptions, styleLint)
+    // 之后写个keys 验证 最后的files 是不是两个相合
     if (styleLint.files) {
       opts.files = _.union(defaultOptions.files, styleLint.files)
     }
