@@ -3,7 +3,8 @@ const StyleLintPlugin = require('stylelint-webpack-plugin')
 
 // 默认配置
 const defaultOptions = {
-  files: ['src/**/*.vue', 'src/**/*.scss'],
+  files: ['scss/**/*.scss', 'src/**/*.vue', 'src/**/*.scss'],
+  customSyntax: 'postcss-html',
   syntax: 'scss'
 }
 

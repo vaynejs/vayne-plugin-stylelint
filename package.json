@@ -1,6 +1,6 @@
 {
   "name": "vayne-plugin-stylelint",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "vayne stylelint plugins",
   "main": "index.js",
   "scripts": {
